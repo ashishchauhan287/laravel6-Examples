@@ -16,23 +16,28 @@ Route::get('/', function () {
 });
 
 // Upload Mulitple Document
+// http://127.0.0.1:8000/document
 Route::get('document', 'DocumentController@index')->name('document');
 Route::post('documentstore', 'DocumentController@store')->name('documentstore');
 
 // AJAX CRUD Example
+// http://127.0.0.1:8000/my-posts
 Route::get('my-posts', 'PostController@myPosts');
 Route::resource('posts','PostController');
 
 //fullcalender
+// http://127.0.0.1:8000/fullcalendar
 Route::get('fullcalendar','FullCalendarController@index');
 Route::post('fullcalendar/create','FullCalendarController@create');
 Route::post('fullcalendar/update','FullCalendarController@update');
 Route::post('fullcalendar/delete','FullCalendarController@destroy');
 
 // Paginsation With Array
+// http://127.0.0.1:8000/document
 Route::get('paginate', 'PaginationController@index');
     
 // Admin Only
+// http://127.0.0.1:8000/role
 Route::get('/role', 'HomeController@role');
 Route::middleware('can:isAdmin')->prefix('admin')->group(function () {
     // Mention all admin routes
@@ -72,6 +77,7 @@ Route::get('customhelper','CheckHelperController@index')->name('customhelper');
 Route::post('customhelper/store','CheckHelperController@store')->name('customhelper/store');
 
 // Upload image in amazon S3 bucket
+// http://127.0.0.1:8000/image
  Route::get('image', 'ImageController@index');
  Route::resource('images', 'ImageController', ['only' => ['store', 'destroy']]);
  //Route::post('store', 'ImageController@store');
@@ -79,6 +85,7 @@ Route::post('customhelper/store','CheckHelperController@store')->name('customhel
 
 
 // Add,Update,Delete and Listing Using Ajax 
+ // http://127.0.0.1:8000/ajaxtable
 Route::get('/ajaxtable', 'AjaxTableController@index');
 Route::get('/ajaxtable/fetch_data', 'AjaxTableController@show');
 Route::post('/ajaxtable/add_data', 'AjaxTableController@store')->name('ajaxtable.add_data');

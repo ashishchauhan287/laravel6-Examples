@@ -7,6 +7,47 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## List of Sample Example in This Project
+		Upload Mulitple Document
+		http://127.0.0.1:8000/document
+
+		AJAX CRUD Example
+		http://127.0.0.1:8000/my-posts
+
+		fullcalender
+		http://127.0.0.1:8000/fullcalendar
+
+		Paginsation With Array
+		http://127.0.0.1:8000/document
+
+		Admin Only
+		http://127.0.0.1:8000/role
+
+		Send email using SendGrid (Add Your Own credentials)
+		http://127.0.0.1:8000/mail
+
+		Dompdf for generate pdf files
+		http://127.0.0.1:8000/customers/pdf
+
+		Excel import and export
+		http://127.0.0.1:8000/importExportView
+
+		Ajax Search
+		http://127.0.0.1:8000/search
+
+		HighChart
+		http://127.0.0.1:8000/chart
+
+		Custom Helper
+		http://127.0.0.1:8000/customhelper
+
+		Upload image in amazon S3 bucket (Add Your Own credentials)
+		http://127.0.0.1:8000/image
+
+		Add,Update,Delete and Listing Using Ajax 
+		http://127.0.0.1:8000/ajaxtable
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
